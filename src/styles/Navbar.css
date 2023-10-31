@@ -135,3 +135,140 @@
         height: 50px;
     }
  }
+.nav{
+    height: 56px;
+    padding: 0 20px;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    top:0;
+    width:97%;
+    z-index: 9;
+    background: #fff;
+    border-bottom: 1px solid lightgrey;
+}
+
+.nav .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav  svg:hover{
+  background: rgb(229, 227, 227);
+}
+.nav .left img{
+    padding: 2px;
+    height: 70px;
+    cursor: pointer;
+}
+.nav  svg{
+    padding: 5px ;
+    font-size: 30px;
+    font-weight: 200;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+    
+}
+ 
+
+.nav .middle{
+  display: flex;
+  align-items: center;
+}
+
+.nav .middle input{
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+    box-shadow: inset 0 1px 2px var(--ytd-searchbox-legacy-border-shadow-color);
+    caret-color: var(--yt-spec-text-primary);
+    color: var(--ytd-searchbox-text-color);
+    padding: 5px 4px 5px 16px;
+    margin-left: 32px;
+    flex: 1;
+    height: 30px;
+    width: 500px;
+    flex-basis: 1e-9px;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .middle .search{
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    margin: 0;
+}
+
+.nav .middle .search:hover{
+    background: rgb(229, 227, 227);;
+}
+ .nav .middle .search .searchicon{
+    display: inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    color: lightslategrey;
+    padding:8px;
+ }
+
+
+ .nav .middle .mic{
+   
+    margin-left: 20px;
+    
+    
+    
+ }
+ 
+
+ .nav .right{
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .mb_nav{
+    display: none;
+ }
+
+ @media (max-width:992px){
+    .nav{
+        display: none;
+    }
+
+    .mb_nav{
+        height: 56px;
+        padding: 0 20px;
+        display: flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         top:0;
+        z-index: 9;
+        background: #fff;
+        position: sticky;
+        top: 0;
+    }
+
+    .mb_nav img{
+        height: 50px;
+    }
+ }
