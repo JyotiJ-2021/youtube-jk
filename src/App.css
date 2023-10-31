@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+
+
+.filter label{
+  background: #f6f6f6;
+  color: #000;
+  padding: 3px 10px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 300;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filter{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 20px 0;
+  
+
+}
+
+.pagination{
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  padding: 8px 15px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.ytgh{
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  white-space: pre-line;
+  margin: 20px 22%;
+}
+
+.ybtn{
+  color: #fff;
+background: #065fd4;
+}
+
+.yghj{
+  margin: 20px 23%;
+  max-width: 680px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.m20{
+  margin:20px 0;
+}
+.blue{
+  color: #065fd4;
+}
+.option{
+  display: flex; 
+  gap: 10px;
+}
+.rightside{
+  padding: 20px 40px
+}
+.contain{
+  margin-top: 6rem;
+}
+@media(max-width:992px){
+  .hide{
+    display: none;
+  }
+  .rightside{
+    padding: 10px;
+    margin: 0;
+  }
+
+  .contain{
+    margin-top: 2rem;
+  }
+
+  .filter{
+   
+   display: none;
+  }
+
+  .filter label{
+     padding: 4px;
+     font-size: 12px;
+   
+  }
+  .ytgh{
+     font-size: 14px;
+     line-height: 1rem;
+  }
+}
